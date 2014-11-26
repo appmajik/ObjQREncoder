@@ -25,14 +25,14 @@
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 @interface QREncoder : NSObject {
-  NSString*         _str;
-  QRCorrectionLevel _correctionLevel;
-  int               _size;
-  int               _pattern;
-  QRMatrix*         _matrix;
+    NSString*         _str;
+    QRCorrectionLevel _correctionLevel;
+    int               _size;
+    int               _pattern;
+    QRMatrix*         _matrix;
 }
 
 + (UIImage *)encode:(NSString *)str;
-+ (UIImage *)encode:(NSString *)str size:(NSInteger)size correctionLevel:(QRCorrectionLevel)level;
++ (UIImage *)encode:(NSString *)str size:(int)size correctionLevel:(QRCorrectionLevel)level;
 
 @end
